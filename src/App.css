@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #282c34;
 }
 
 .App-logo {
@@ -35,4 +36,68 @@
   to {
     transform: rotate(360deg);
   }
+}
+body {
+  background-color: #1b1b1b;
+  margin: 0;
+  padding: 0; 
+}
+.PokemonList{
+  color: white;
+
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  margin: 100px;
+  padding: 10px;
+  background-color: antiquewhite;
+  box-sizing: border-box; 
+  color: black;
+  border-radius: 5%;
+}
+
+.mouvBox{
+  position: relative;
+  animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.pokemon-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+}
+
+.logo {
+  font-size: 1.5em;
+}
+
+.search-bar {
+  margin-left: auto;
+}
+
+input {
+  padding: 5px;
+  width: 150px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
